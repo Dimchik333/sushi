@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="wrap">
+    <nav>
+      <div class="logo">
+        <div class="logo_img">
+          <img src="images/unnamed.png" alt="logo">
+        </div>
+          <p>СУШИ</p>
+      </div>
+      <ul>
+        <li><a href="#about">Роллы</a></li>
+        <li><a href="#teams">Суши</a></li>
+        <li><a href="#menu">Сеты</a></li>
+        <li><a href="#order">Заказ</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Самые лучшие суши в городе</h1>
+    </header>
+  <section id="menu">
+      <div class="set">
+          <div class="circle"><img src="images/img3.jpg"></div>
+          <h3>Запечённая Бомба</h3>
+          <ul>
+            <li>Канзас</li>
+            <li>Мураками</li>
+            <li>Крабс темпура</li>
+            <li>Амай</li>
+          </ul>
+      </div>
+      <div class="set">
+          <div class="circle"><img src="images/img3.jpg"></div>
+          <h3>Калифорния Велкам</h3>
+          <ul>
+            <li>Круиз</li>
+            <li>Чип</li>
+            <li>Триада</li>
+            <li>Снежный краб</li>
+          </ul>
+      </div>
+      <div class="set">
+          <div class="circle"><img src="images/img3.jpg"></div>
+          <h3>Темпура Хит</h3>
+            <ul>
+              <li>Калифорния с угрем</li>
+              <li>Калифорния с лососем</li>
+              <li>Калифорния с крабом</li>
+              <li>Калифорния с креветкой</li>
+            </ul>
+      </div>
+      <div class="set">
+          <div class="circle"><img src="images/img3.jpg"></div>
+          <h3>Горячий сет ВУЛКАН</h3>
+          <ul>
+            <li>Яки Маки</li>
+            <li>Канито</li>
+            <li>Запеченный с курицей</li>
+            <li>Снежный Краб</li>
+            <li>Чикен Спайси</li>
+          </ul>
+      </div>
+  </section>
+  <form id="order">
+          <div>
+            <label>
+              <span>Имя:</span>
+              <input type="text" id="name" name="userName" placeholder="Введите свое имя" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Город:</span>
+              <input type="text" name="city" id="cityname" list="citychoice"/>
+                <datalist id="citychoice">
+                    <option>Краматорск</option>
+                    <option>Славянск</option>
+                    <option>Дружковка</option>
+                    <option>Сергеевка</option>
+                </datalist>
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Адрес:</span>
+            <input type="text" id="address" name="userAddress" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Телефон:</span>
+                <input type="text" id="phone" name="userPhone" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Email:</span>
+              <input type="email" id="email" name="userEmail" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Количество палочек:</span>
+              <input type="number" name="userRating" id="rating" min="0" max="15" step="1">
+            </label>
+          </div>
+          <div>
+            <p>Вид палочек:</p>
+              <div class="form_radio">
+              	<input id="radio-1" type="radio" name="radio" value="1" checked>
+              	<label for="radio-1"><span>Обычные</span></label>
+              </div>
+              <div class="form_radio">
+              	<input id="radio-2" type="radio" name="radio" value="2">
+              	<label for="radio-2"><span>Учебные</span></label>
+              </div>
+          </div>
+          <div>
+            <label>
+              <span>Выбор сета:</span>
+              <select id="nameOfPizza" name="nameOfPizza">
+                <option>Запечённая Бомба</option>
+                <option>Калифорния Велкам</option>
+                <option>Темпура Хит</option>
+                <option>Горячий Вулкан</option>
+              </select>
+            </label>
+          </div>
+          <div >
+            <p>Салфетки ложить?</p>
+            <p><input id="yes" type="checkbox" name="yes" value="Да"> Да</p>
+            <p><input id="no" type="checkbox" name="no" value="Нет" checked>Нет</p>
+          </div>
+          <div >
+            <p>Ваши дополнительные пожелания:</p>
+            <textarea name="coment" rows="8" cols="40"></textarea>
+          </div>
+      </form>
+    <footer>
+      Самые лучшие суши в городе
+    </footer>
+  </div>
+
+</body>
+</html>
